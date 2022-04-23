@@ -23,7 +23,7 @@ FROM ghcr.io/radiorabe/s2i-base:latest AS build
 RUN "hello world"
 ```
 
-Preferably you should use a downstream base image for you needs.
+Preferably you should use a downstream base image for your needs.
 
 ## Downstream Base Images
 
