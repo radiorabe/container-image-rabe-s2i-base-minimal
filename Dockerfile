@@ -1,4 +1,4 @@
-FROM ghcr.io/radiorabe/s2i-core:1.0.1
+FROM ghcr.io/radiorabe/s2i-core:1.0.2
 
 ENV NODEJS_VER=14
 
