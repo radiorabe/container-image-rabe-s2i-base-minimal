@@ -1,4 +1,4 @@
-FROM ghcr.io/radiorabe/s2i-core:2.0.0-alpha.2
+FROM ghcr.io/radiorabe/s2i-core:2.0.0-alpha.3
 
 RUN    microdnf install -y \
          autoconf \
