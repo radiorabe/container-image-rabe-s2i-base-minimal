@@ -92,7 +92,7 @@ jobs:
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'ghcr.io/radiorabe/s2i-base@${{ steps.docker_push.outputs.digest }}'
+          image-ref: 'ghcr.io/radiorabe/s2i-base@${{ steps.docker_build.outputs.digest }}'
           format: 'sarif'
           ignore-unfixed: true
           output: 'trivy-results.sarif'
