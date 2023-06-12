@@ -5,13 +5,13 @@ image with the main difference being that it does not include `yum` since it is 
 It's main use is as a downstream for RaBe S2I tooling.
 
 The image is based on the [RaBe S2I Core Image](https://github.com/radiorabe/container-image-rabe-s2i-core-minimal)
-which is in turn based on the [Red Hat Universal Base Image 8 Minimal](https://catalog.redhat.com/software/containers/ubi8/ubi-minimal/5c359a62bed8bd75a2c3fba8)
-container provided by Red Hat via [RaBe Universal Base Image 8 Minimal](https://github.com/radiorabe/container-image-ubi8-minimal).
+which is in turn based on the [AlmaLinux 9 UBI9 variant image](https://github.com/AlmaLinux/docker-images)
+container provided by AlmaLinux and based on the work from [Red Hat](https://catalog.redhat.com/software/containers/ubi9-minimal/61832888c0d15aff4912fe0d). It uses parts of the [Red Hat S2I Base Image](https://catalog.redhat.com/software/containers/ubi9/s2i-base/61fba02e153d30bcbfa96ef3).
 
 ## Features
 
 - Based on RaBe Universal Base Image 8 Minimal
-- Builds the base for RaBe S2I Base Images
+- Builds the base for RaBe S2I Images
 
 ## Usage
 
