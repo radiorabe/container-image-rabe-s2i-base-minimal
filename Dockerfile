@@ -1,9 +1,6 @@
-FROM ghcr.io/radiorabe/s2i-core:1.1.0
+FROM ghcr.io/radiorabe/s2i-core:2.0.0
 
-ENV NODEJS_VER=14
-
-RUN    microdnf module enable -y nodejs:$NODEJS_VER \
-    && microdnf install -y \
+RUN    microdnf install -y \
          autoconf \
          automake \
          bzip2 \
