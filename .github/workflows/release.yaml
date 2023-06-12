@@ -17,4 +17,4 @@ jobs:
       display-name: 'RaBe S2I Base Minimal'
       tags: 'minimal rhel9 rabe s2i'
   mkdocs:
-    uses: radiorabe/actions/.github/workflows/release-mkdocs@v0.12.0
+    uses: radiorabe/actions/.github/workflows/release-mkdocs.yaml@v0.12.0
