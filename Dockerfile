@@ -25,4 +25,5 @@ RUN    microdnf install -y \
          wget \
          which \
          zlib-devel \
+    && microdnf update -y \
     && microdnf clean all
