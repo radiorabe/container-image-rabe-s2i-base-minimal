@@ -16,5 +16,12 @@ jobs:
       name: 's2i-base'
       display-name: 'RaBe S2I Base Minimal'
       tags: 'minimal rhel9 rabe s2i'
+      platforms: "linux/amd64,linux/arm64"
+      docker-daemon-config: |
+        {
+          "features": {
+            "containerd-snapshotter": true
+          }
+        }
   mkdocs:
     uses: radiorabe/actions/.github/workflows/release-mkdocs.yaml@v0.35.1
